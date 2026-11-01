@@ -1,663 +1,531 @@
+
 const QUESTION_BANK = [
 
   // ============================================
-  // CHM 101 — ATOMIC STRUCTURE (QUESTIONS 1–14)
+  // CHM 101 — ATOMS, MOLECULES AND INTERMOLECULAR FORCES
+  // QUESTIONS 1–15
   // ============================================
 
   {
     subject: "CHM 101",
-    question: 'Who proposed the atomic nature of matter around 400 B.C. and coined the term "atomos"?',
-    options: ["John Dalton", "Democritus", "J.J. Thomson", "Ernest Rutherford"],
+    question: "What is the smallest particle of an element that retains its chemical properties?",
+    options: ["Molecule", "Atom", "Compound", "Ion"],
     answer: 1,
-    explanation: 'Democritus proposed that matter consists of indivisible particles called "atomos".'
+    explanation: "An atom is the smallest unit of an element that retains its chemical identity."
   },
   {
     subject: "CHM 101",
-    question: "Which postulate of Dalton's Atomic Theory is contradicted by the existence of isotopes?",
+    question: "Which of the following particles has a negative electrical charge?",
+    options: ["Proton", "Neutron", "Electron", "Nucleus"],
+    answer: 2,
+    explanation: "Electrons carry a negative charge, protons are positive, and neutrons are neutral."
+  },
+  {
+    subject: "CHM 101",
+    question: "The atomic number of an element is equal to its number of:",
+    options: ["Neutrons", "Protons", "Protons and neutrons", "Electrons and neutrons"],
+    answer: 1,
+    explanation: "Atomic number is defined as the number of protons in the nucleus of an atom."
+  },
+  {
+    subject: "CHM 101",
+    question: "What is the mass number of an atom containing 11 protons and 12 neutrons?",
+    options: ["11", "12", "23", "24"],
+    answer: 2,
+    explanation: "Mass number = number of protons + number of neutrons = 11 + 12 = 23."
+  },
+  {
+    subject: "CHM 101",
+    question: "Atoms of the same element having different numbers of neutrons are called:",
+    options: ["Isobars", "Isotopes", "Ions", "Isomers"],
+    answer: 1,
+    explanation: "Isotopes have the same atomic number but different mass numbers because they contain different numbers of neutrons."
+  },
+  {
+    subject: "CHM 101",
+    question: "Which of the following is a diatomic molecule?",
+    options: ["H₂O", "CO₂", "O₂", "NH₃"],
+    answer: 2,
+    explanation: "Oxygen gas exists naturally as O₂, a molecule containing two oxygen atoms."
+  },
+  {
+    subject: "CHM 101",
+    question: "What is the chemical formula of calcium chloride?",
+    options: ["CaCl", "CaCl₂", "Ca₂Cl", "Ca₂Cl₂"],
+    answer: 1,
+    explanation: "Calcium forms Ca²⁺ ions while chlorine forms Cl⁻ ions. Two chloride ions are needed to balance one calcium ion."
+  },
+  {
+    subject: "CHM 101",
+    question: "Which type of chemical bond involves the transfer of electrons from one atom to another?",
+    options: ["Covalent bond", "Metallic bond", "Ionic bond", "Hydrogen bond"],
+    answer: 2,
+    explanation: "An ionic bond forms through electron transfer, producing oppositely charged ions that attract each other."
+  },
+  {
+    subject: "CHM 101",
+    question: "A covalent bond is formed when atoms:",
     options: [
-      "All matter consists of tiny indivisible particles called atoms.",
-      "Atoms can neither be created nor destroyed.",
-      "Atoms of the same element are identical and have the same mass and chemical properties.",
-      "Atoms combine in small whole-number ratios to form compounds."
+      "Transfer protons",
+      "Share electrons",
+      "Lose all their electrons",
+      "Share neutrons"
+    ],
+    answer: 1,
+    explanation: "Covalent bonding occurs when atoms share one or more pairs of electrons."
+  },
+  {
+    subject: "CHM 101",
+    question: "Which of the following molecules is polar?",
+    options: ["CO₂", "CH₄", "H₂O", "O₂"],
+    answer: 2,
+    explanation: "Water has a bent molecular shape, so its bond dipoles do not cancel. This gives it a permanent dipole."
+  },
+  {
+    subject: "CHM 101",
+    question: "Which intermolecular force is primarily responsible for the unusually high boiling point of water?",
+    options: [
+      "London dispersion forces",
+      "Hydrogen bonding",
+      "Ionic bonding",
+      "Metallic bonding"
+    ],
+    answer: 1,
+    explanation: "Water molecules form strong hydrogen bonds with one another, requiring considerable energy to separate them."
+  },
+  {
+    subject: "CHM 101",
+    question: "Which intermolecular force is present in all atoms and molecules?",
+    options: [
+      "Hydrogen bonding",
+      "Dipole-dipole interaction",
+      "London dispersion forces",
+      "Ionic attraction"
     ],
     answer: 2,
-    explanation: "Isotopes of an element have the same number of protons but different numbers of neutrons and therefore different masses."
+    explanation: "London dispersion forces arise from temporary fluctuations in electron distribution and occur in all atoms and molecules."
   },
   {
     subject: "CHM 101",
-    question: "William Crookes discovered cathode rays by passing a high-voltage electrical discharge through gases under what condition?",
-    options: [
-      "High pressure",
-      "Low pressure",
-      "Standard atmospheric pressure",
-      "Extreme vacuum with no gas present"
-    ],
-    answer: 1,
-    explanation: "Cathode rays were studied in discharge tubes containing gas at low pressure."
-  },
-  {
-    subject: "CHM 101",
-    question: "What is the specific charge (e/m) of an electron determined by J.J. Thomson?",
-    options: [
-      "1.602 × 10⁻¹⁹ C/kg",
-      "9.11 × 10⁻³¹ C/kg",
-      "1.7586 × 10¹¹ C/kg",
-      "1.672 × 10⁻²⁷ C/kg"
-    ],
+    question: "Which of the following substances can form hydrogen bonds between its molecules?",
+    options: ["CH₄", "HCl", "NH₃", "CO₂"],
     answer: 2,
-    explanation: "The magnitude of the electron's charge-to-mass ratio is approximately 1.7586 × 10¹¹ C/kg."
+    explanation: "Ammonia contains N-H bonds and a lone pair on nitrogen, allowing hydrogen bonding between molecules."
   },
   {
     subject: "CHM 101",
-    question: "R.A. Millikan measured the charge of an electron using which experimental setup?",
+    question: "Which intermolecular force exists between permanent polar molecules?",
     options: [
-      "Gold foil experiment",
-      "Gas discharge tube with perforated cathode",
-      "Oil droplet experiment",
-      "Mass spectrometer"
-    ],
-    answer: 2,
-    explanation: "Millikan's oil-drop experiment enabled the determination of the elementary electric charge."
-  },
-  {
-    subject: "CHM 101",
-    question: "Which characteristic distinguishes canal rays from cathode rays?",
-    options: [
-      "They are negatively charged.",
-      "They have much lower charge-to-mass ratios.",
-      "Their charge-to-mass ratio remains constant regardless of the gas used.",
-      "They are lighter than electrons."
-    ],
-    answer: 1,
-    explanation: "Canal rays are positively charged particles with much smaller charge-to-mass ratios than electrons. Their properties depend on the gas used."
-  },
-  {
-    subject: "CHM 101",
-    question: "What was the primary conclusion of Rutherford's gold foil scattering experiment?",
-    options: [
-      "Electrons are embedded uniformly in a positive sea.",
-      "The atom has a small, dense, positively charged nucleus and is mostly empty space.",
-      "Neutrons are located outside the nucleus.",
-      "Atoms are completely solid and impenetrable."
-    ],
-    answer: 1,
-    explanation: "The scattering of alpha particles revealed a small, dense, positively charged nucleus surrounded by mostly empty space."
-  },
-  {
-    subject: "CHM 101",
-    question: "Henry Moseley used X-rays to determine which fundamental property of elements?",
-    options: [
-      "Mass number",
-      "Atomic number",
-      "Number of neutrons",
-      "Isotopic abundance"
-    ],
-    answer: 1,
-    explanation: "Moseley established the relationship between an element's characteristic X-ray frequencies and its atomic number."
-  },
-  {
-    subject: "CHM 101",
-    question: "What is the function of the magnetic field in a mass spectrometer?",
-    options: [
-      "To vaporize the solid sample",
-      "To ionize neutral atoms by stripping electrons",
-      "To deflect ions according to their mass-to-charge ratios",
-      "To convert ion beams directly into percentages"
-    ],
-    answer: 2,
-    explanation: "A magnetic field deflects moving ions. Their paths depend on their mass-to-charge ratios, their velocities, and the field strength."
-  },
-  {
-    subject: "CHM 101",
-    question: "What is the difference between the sum of the masses of individual nucleons and the actual mass of a nucleus called?",
-    options: [
-      "Ionization energy",
-      "Mass defect",
-      "Nuclear binding energy",
-      "Atomic weight"
-    ],
-    answer: 1,
-    explanation: "Mass defect is the difference between the total mass of separate nucleons and the mass of the bound nucleus."
-  },
-  {
-    subject: "CHM 101",
-    question: "According to Bohr's theory, when does an atom emit electromagnetic radiation?",
-    options: [
-      "When an electron absorbs a quantum of energy",
-      "When an electron moves from a lower to a higher energy level",
-      "When an electron moves from a higher to a lower energy level",
-      "When an electron remains in its ground state"
-    ],
-    answer: 2,
-    explanation: "An electron emits a photon when it transitions from a higher energy level to a lower energy level."
-  },
-  {
-    subject: "CHM 101",
-    question: "Which quantum number describes the shape of an atomic orbital?",
-    options: [
-      "Principal quantum number (n)",
-      "Azimuthal quantum number (l)",
-      "Magnetic quantum number (mₗ)",
-      "Spin quantum number (mₛ)"
-    ],
-    answer: 1,
-    explanation: "The azimuthal quantum number determines the subshell and orbital shape, such as s, p, d, or f."
-  },
-  {
-    subject: "CHM 101",
-    question: "What is the maximum number of electrons in a principal shell where n = 3?",
-    options: ["8", "18", "32", "6"],
-    answer: 1,
-    explanation: "The maximum number of electrons in a principal shell is 2n². For n = 3, 2 × 3² = 18."
-  },
-  {
-    subject: "CHM 101",
-    question: "What does the Pauli Exclusion Principle state?",
-    options: [
-      "Electrons fill orbitals in order of increasing energy.",
-      "No two electrons in the same atom can have the same set of all four quantum numbers.",
-      "Orbitals are filled singly before pairing.",
-      "The energy of an electron in an atom is continuous."
-    ],
-    answer: 1,
-    explanation: "No two electrons in an atom can possess identical values for all four quantum numbers."
-  },
-
-  // ============================================
-  // PHY 101 — DIMENSIONS AND SI UNITS (15–20)
-  // ============================================
-
-  {
-    subject: "PHY 101",
-    question: "Which list contains the seven fundamental SI quantities?",
-    options: [
-      "Force, velocity, acceleration, mass",
-      "Mass, time, length, temperature, electric current, amount of substance, luminous intensity",
-      "Energy, power, work, momentum",
-      "Density, pressure, frequency, volume"
-    ],
-    answer: 1,
-    explanation: "The seven base quantities are length, mass, time, electric current, thermodynamic temperature, amount of substance, and luminous intensity."
-  },
-  {
-    subject: "PHY 101",
-    question: "What is the dimensional formula for force?",
-    options: [
-      "LT⁻¹",
-      "MLT⁻²",
-      "ML⁻¹T⁻²",
-      "ML²T⁻²"
-    ],
-    answer: 1,
-    explanation: "Force = mass × acceleration. Since acceleration has dimensions LT⁻², force has dimensions MLT⁻²."
-  },
-  {
-    subject: "PHY 101",
-    question: "Dimensional analysis checks the validity of physical equations using which principle?",
-    options: [
-      "Homogeneity of dimensions",
-      "Conservation of energy",
-      "Vector addition",
-      "Proportional scaling"
+      "Dipole-dipole interaction",
+      "Metallic bonding",
+      "Covalent bonding",
+      "Nuclear attraction"
     ],
     answer: 0,
-    explanation: "For a dimensionally consistent equation, all additive terms must have the same dimensions."
+    explanation: "Permanent dipoles attract one another through electrostatic interactions between their partially positive and partially negative ends."
   },
   {
-    subject: "PHY 101",
-    question: "What is the dimension of the derivative of velocity with respect to time, dv/dt?",
+    subject: "CHM 101",
+    question: "Why does the boiling point of many substances increase as their intermolecular forces become stronger?",
     options: [
-      "LT⁻¹",
-      "LT⁻²",
-      "MLT⁻²",
-      "L²T⁻²"
+      "Their molecules become smaller.",
+      "More energy is needed to separate their molecules.",
+      "Their atoms lose their protons.",
+      "Their molecular masses always decrease."
     ],
     answer: 1,
-    explanation: "Acceleration is the rate of change of velocity with time. Its dimensions are (LT⁻¹)/T = LT⁻²."
+    explanation: "Stronger intermolecular attractions require more energy to overcome during boiling, generally resulting in higher boiling points."
+  },
+
+
+  // ============================================
+  // PHY 101 — SCALARS, VECTORS AND MOTION
+  // QUESTIONS 16–30
+  // ============================================
+
+  {
+    subject: "PHY 101",
+    question: "Which of the following is a scalar quantity?",
+    options: ["Velocity", "Force", "Displacement", "Speed"],
+    answer: 3,
+    explanation: "Speed has magnitude only, while velocity, force and displacement have both magnitude and direction."
   },
   {
     subject: "PHY 101",
-    question: "Which SI prefix represents a factor of 10⁻⁹?",
+    question: "Which of the following is a vector quantity?",
+    options: ["Mass", "Time", "Acceleration", "Temperature"],
+    answer: 2,
+    explanation: "Acceleration has both magnitude and direction, making it a vector quantity."
+  },
+  {
+    subject: "PHY 101",
+    question: "A student walks 3 m east and then 4 m west. What is the magnitude of the total displacement?",
+    options: ["7 m", "4 m", "3 m", "1 m"],
+    answer: 3,
+    explanation: "Taking east as positive, displacement = 3 - 4 = -1 m. Its magnitude is 1 m, directed west."
+  },
+  {
+    subject: "PHY 101",
+    question: "What is the magnitude of a vector A = 3i + 4j?",
+    options: ["3", "4", "5", "7"],
+    answer: 2,
+    explanation: "Magnitude = √(3² + 4²) = √25 = 5."
+  },
+  {
+    subject: "PHY 101",
+    question: "Which of the following represents a unit vector along the positive x-axis?",
+    options: ["i", "j", "k", "2i"],
+    answer: 0,
+    explanation: "The unit vector i represents a vector of magnitude one along the positive x-axis."
+  },
+  {
+    subject: "PHY 101",
+    question: "If a vector A = 6i + 8j, what is its unit vector?",
     options: [
-      "Micro (μ)",
-      "Nano (n)",
-      "Pico (p)",
-      "Femto (f)"
+      "6i + 8j",
+      "0.6i + 0.8j",
+      "0.8i + 0.6j",
+      "3i + 4j"
     ],
     answer: 1,
-    explanation: "Nano represents 10⁻⁹, micro represents 10⁻⁶, pico represents 10⁻¹², and femto represents 10⁻¹⁵."
+    explanation: "The magnitude is √(36 + 64) = 10. Dividing each component by 10 gives 0.6i + 0.8j."
   },
   {
     subject: "PHY 101",
-    question: "A physical quantity whose dimensional exponents are all zero is called:",
+    question: "Two vectors acting in the same direction have magnitudes 5 N and 7 N. What is their resultant magnitude?",
+    options: ["2 N", "12 N", "35 N", "7 N"],
+    answer: 1,
+    explanation: "For vectors acting in the same direction, their magnitudes are added: 5 + 7 = 12 N."
+  },
+  {
+    subject: "PHY 101",
+    question: "What is the scalar product of two perpendicular vectors?",
+    options: ["1", "Their magnitudes multiplied", "Zero", "Negative one"],
+    answer: 2,
+    explanation: "A · B = |A||B|cosθ. For perpendicular vectors, θ = 90° and cos90° = 0."
+  },
+  {
+    subject: "PHY 101",
+    question: "If A = 3i + 2j and B = 2i + 4j, find A · B.",
+    options: ["10", "12", "14", "16"],
+    answer: 2,
+    explanation: "A · B = (3 × 2) + (2 × 4) = 6 + 8 = 14."
+  },
+  {
+    subject: "PHY 101",
+    question: "The vector product of two vectors produces which type of quantity?",
     options: [
-      "A derived quantity",
-      "A fundamental quantity",
+      "A scalar quantity",
+      "A vector quantity",
       "A dimensionless quantity",
-      "A vector quantity"
+      "A constant quantity"
+    ],
+    answer: 1,
+    explanation: "The cross product produces a vector perpendicular to the plane containing the two original vectors."
+  },
+  {
+    subject: "PHY 101",
+    question: "What is the magnitude of the cross product of two vectors A and B?",
+    options: [
+      "|A||B|cosθ",
+      "|A| + |B|",
+      "|A||B|sinθ",
+      "|A|/|B|"
     ],
     answer: 2,
-    explanation: "A dimensionless quantity has no net dimensions of the fundamental quantities."
+    explanation: "The magnitude of the cross product is |A × B| = |A||B|sinθ."
+  },
+  {
+    subject: "PHY 101",
+    question: "A body moves with a displacement of 20 m in 4 seconds. What is its average velocity if the motion is in a straight line?",
+    options: ["4 m/s", "5 m/s", "16 m/s", "80 m/s"],
+    answer: 1,
+    explanation: "Average velocity = displacement/time = 20/4 = 5 m/s."
+  },
+  {
+    subject: "PHY 101",
+    question: "The derivative of displacement with respect to time gives:",
+    options: ["Acceleration", "Force", "Velocity", "Momentum"],
+    answer: 2,
+    explanation: "Velocity is the rate of change of displacement with respect to time: v = ds/dt."
+  },
+  {
+    subject: "PHY 101",
+    question: "If the displacement of a particle is given by s = 3t² + 2t, what is its velocity at t = 2 seconds?",
+    options: ["8 m/s", "10 m/s", "12 m/s", "14 m/s"],
+    answer: 3,
+    explanation: "Velocity v = ds/dt = 6t + 2. At t = 2, v = 12 + 2 = 14 m/s."
+  },
+  {
+    subject: "PHY 101",
+    question: "If the velocity of a body is v = 4t + 3, what is its acceleration?",
+    options: ["3 m/s²", "4 m/s²", "4t m/s²", "7 m/s²"],
+    answer: 1,
+    explanation: "Acceleration a = dv/dt. Differentiating 4t + 3 gives a constant acceleration of 4 m/s²."
   },
 
-  // ============================================
-  // MATH 101 — POLYNOMIALS (QUESTIONS 1–20)
-  // ============================================
-
-  {
-    subject: "MATH 101",
-    question: "Add the polynomials: (3x² + 5x − 2) + (2x² − x + 4).",
-    options: [
-      "5x² + 4x + 2",
-      "5x² + 6x + 2",
-      "x² + 4x + 6",
-      "5x² + 4x − 6"
-    ],
-    answer: 0,
-    explanation: "Combine like terms: (3x² + 2x²) + (5x − x) + (−2 + 4) = 5x² + 4x + 2."
-  },
-  {
-    subject: "MATH 101",
-    question: "Subtract (x² − 4x + 6) from (4x² + 2x − 3).",
-    options: [
-      "3x² − 2x + 3",
-      "3x² + 6x − 9",
-      "5x² − 2x + 3",
-      "3x² − 6x + 9"
-    ],
-    answer: 1,
-    explanation: "Subtracting gives 4x² + 2x − 3 − x² + 4x − 6 = 3x² + 6x − 9."
-  },
-  {
-    subject: "MATH 101",
-    question: "Find the product of (x + 3) and (x − 5).",
-    options: [
-      "x² − 2x − 15",
-      "x² + 2x − 15",
-      "x² − 8x − 15",
-      "x² + 8x + 15"
-    ],
-    answer: 0,
-    explanation: "Expand: x² − 5x + 3x − 15 = x² − 2x − 15."
-  },
-  {
-    subject: "MATH 101",
-    question: "Multiply (2x − 1) by (3x² + x − 4).",
-    options: [
-      "6x³ − x² + 5x + 4",
-      "6x³ + 5x² − x − 4",
-      "6x³ − x² − 9x + 4",
-      "6x³ + x² − 9x − 4"
-    ],
-    answer: 2,
-    explanation: "Expand and combine like terms: 6x³ + 2x² − 8x − 3x² − x + 4 = 6x³ − x² − 9x + 4."
-  },
-  {
-    subject: "MATH 101",
-    question: "Divide x² + 5x + 6 by (x + 2).",
-    options: [
-      "x − 3",
-      "x + 3",
-      "x + 2",
-      "x − 2"
-    ],
-    answer: 1,
-    explanation: "Factorise x² + 5x + 6 = (x + 2)(x + 3). The quotient is x + 3."
-  },
-  {
-    subject: "MATH 101",
-    question: "Divide 2x³ + 3x² − 8x + 3 by (x − 1).",
-    options: [
-      "2x² + 5x − 3",
-      "2x² − 5x + 3",
-      "2x² + x − 4",
-      "2x² + 5x + 3"
-    ],
-    answer: 0,
-    explanation: "Polynomial long division gives quotient 2x² + 5x − 3 with remainder zero."
-  },
-  {
-    subject: "MATH 101",
-    question: "Find the remainder when P(x) = x³ − 2x² + x − 5 is divided by (x − 2).",
-    options: ["3", "−3", "5", "−5"],
-    answer: 1,
-    explanation: "By the Remainder Theorem, the remainder is P(2) = 8 − 8 + 2 − 5 = −3."
-  },
-  {
-    subject: "MATH 101",
-    question: "Determine whether (x + 1) is a factor of P(x) = x³ + 2x² − x − 2.",
-    options: [
-      "No, the remainder is −2.",
-      "No, the remainder is 1.",
-      "Yes, the remainder is 0.",
-      "Yes, the remainder is 2."
-    ],
-    answer: 2,
-    explanation: "P(−1) = −1 + 2 + 1 − 2 = 0. Therefore, (x + 1) is a factor."
-  },
-  {
-    subject: "MATH 101",
-    question: "Find the sum of (4x³ − 2x² + x) and (−2x³ + 5x² − 3x + 7).",
-    options: [
-      "2x³ + 3x² − 2x + 7",
-      "6x³ + 3x² − 4x + 7",
-      "2x³ − 7x² + 2x − 7",
-      "2x³ + 7x² − 2x + 7"
-    ],
-    answer: 0,
-    explanation: "Combine like terms to obtain 2x³ + 3x² − 2x + 7."
-  },
-  {
-    subject: "MATH 101",
-    question: "Subtract (5x² − 3x + 1) from (2x² + x − 4).",
-    options: [
-      "3x² − 4x + 5",
-      "−3x² + 4x − 5",
-      "−3x² − 2x − 3",
-      "3x² + 2x + 3"
-    ],
-    answer: 1,
-    explanation: "The difference is 2x² + x − 4 − 5x² + 3x − 1 = −3x² + 4x − 5."
-  },
-  {
-    subject: "MATH 101",
-    question: "Expand and simplify (2x + 3)².",
-    options: [
-      "4x² + 9",
-      "4x² + 6x + 9",
-      "4x² + 12x + 9",
-      "2x² + 12x + 9"
-    ],
-    answer: 2,
-    explanation: "Using (a + b)² = a² + 2ab + b² gives 4x² + 12x + 9."
-  },
-  {
-    subject: "MATH 101",
-    question: "Find the product of (x − 4)(x² + 4x + 16).",
-    options: [
-      "x³ − 64",
-      "x³ + 64",
-      "x³ − 16x − 64",
-      "x³ − 8x + 64"
-    ],
-    answer: 0,
-    explanation: "Using the difference of cubes identity, (a − b)(a² + ab + b²) = a³ − b³, gives x³ − 64."
-  },
-  {
-    subject: "MATH 101",
-    question: "Divide x³ − 8 by (x − 2).",
-    options: [
-      "x² − 2x + 4",
-      "x² + 2x + 4",
-      "x² − 4x + 4",
-      "x² + 4x + 4"
-    ],
-    answer: 1,
-    explanation: "Since x³ − 8 = (x − 2)(x² + 2x + 4), the quotient is x² + 2x + 4."
-  },
-  {
-    subject: "MATH 101",
-    question: "Find the remainder when P(x) = 2x⁴ − 3x² + x − 1 is divided by (x + 1).",
-    options: ["1", "0", "−3", "−1"],
-    answer: 2,
-    explanation: "The remainder is P(−1) = 2 − 3 − 1 − 1 = −3."
-  },
-  {
-    subject: "MATH 101",
-    question: "If (x − 3) is a factor of x³ − 4x² + kx − 6, find k.",
-    options: ["3", "−5", "5", "−3"],
-    answer: 2,
-    explanation: "By the Factor Theorem, P(3) = 27 − 36 + 3k − 6 = 0. Therefore, 3k = 15 and k = 5."
-  },
-  {
-    subject: "MATH 101",
-    question: "Simplify (7x³ − 4x + 2) − (3x³ + 2x² − x − 5).",
-    options: [
-      "4x³ − 2x² − 5x − 3",
-      "4x³ + 2x² − 3x + 7",
-      "4x³ − 2x² − 3x + 7",
-      "10x³ − 2x² − 5x + 7"
-    ],
-    answer: 2,
-    explanation: "Distribute the minus sign and combine like terms to obtain 4x³ − 2x² − 3x + 7."
-  },
-  {
-    subject: "MATH 101",
-    question: "Multiply the monomials (−3x²y)(4xy³).",
-    options: [
-      "−12x³y⁴",
-      "12x³y⁴",
-      "−12x²y³",
-      "7x³y⁴"
-    ],
-    answer: 0,
-    explanation: "Multiply the coefficients and add exponents of like bases: −3 × 4 = −12, x² × x = x³, and y × y³ = y⁴."
-  },
-  {
-    subject: "MATH 101",
-    question: "Divide (6x⁴ − 9x³ + 12x²) by 3x².",
-    options: [
-      "2x² − 3x + 4",
-      "3x² − 3x + 4",
-      "2x² + 3x − 4",
-      "2x² − 6x + 9"
-    ],
-    answer: 0,
-    explanation: "Divide each term by 3x²: 6x⁴/(3x²) − 9x³/(3x²) + 12x²/(3x²) = 2x² − 3x + 4."
-  },
-  {
-    subject: "MATH 101",
-    question: "Using the Factor Theorem, determine whether (x − 2) is a factor of P(x) = x³ − 3x² + 4.",
-    options: [
-      "No, because P(2) = 4.",
-      "Yes, because P(2) = 0.",
-      "No, because P(2) = −4.",
-      "Yes, because P(2) = 2."
-    ],
-    answer: 1,
-    explanation: "P(2) = 8 − 12 + 4 = 0. Therefore, (x − 2) is a factor."
-  },
-  {
-    subject: "MATH 101",
-    question: "Find the quotient when x² + 7x + 10 is divided by (x + 5).",
-    options: [
-      "x + 5",
-      "x − 2",
-      "x + 2",
-      "x − 5"
-    ],
-    answer: 2,
-    explanation: "Factorise x² + 7x + 10 = (x + 5)(x + 2). The quotient is x + 2."
-  },
 
   // ============================================
-  // BIO 101 — CELL BIOLOGY (QUESTIONS 1–20)
+  // BIO 101 — CELL BIOLOGY
+  // QUESTIONS 31–45
   // ============================================
 
   {
     subject: "BIO 101",
-    question: 'Which cell organelle is widely known as the "powerhouse of the cell"?',
-    options: ["Ribosome", "Nucleus", "Mitochondrion", "Chloroplast"],
-    answer: 2,
-    explanation: "Mitochondria produce much of the ATP used to power cellular activities."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which organelle is primarily responsible for protein synthesis?",
-    options: ["Lysosome", "Ribosome", "Golgi apparatus", "Vacuole"],
+    question: "Which organelle is commonly described as the powerhouse of the cell?",
+    options: ["Ribosome", "Mitochondrion", "Golgi apparatus", "Lysosome"],
     answer: 1,
-    explanation: "Ribosomes translate messenger RNA into polypeptide chains."
+    explanation: "Mitochondria produce most of the ATP used to power many cellular activities."
   },
   {
     subject: "BIO 101",
-    question: "What is a major difference between plant and animal cells regarding their outer boundaries?",
-    options: [
-      "Animal cells have a rigid cell wall, while plant cells do not.",
-      "Plant cells have a cell wall outside the cell membrane, while animal cells lack a cell wall.",
-      "Animal cells have a capsule, while plant cells have a cell wall.",
-      "There is no difference in their outer boundaries."
-    ],
-    answer: 1,
-    explanation: "Plant cells possess a cell wall outside the plasma membrane. Animal cells have a plasma membrane but no cell wall."
-  },
-  {
-    subject: "BIO 101",
-    question: "What is the primary function of the plasma membrane?",
-    options: [
-      "To synthesize proteins",
-      "To generate ATP energy",
-      "To regulate the movement of substances into and out of the cell",
-      "To digest cellular waste"
-    ],
-    answer: 2,
-    explanation: "The selectively permeable plasma membrane regulates the movement of substances between the cell and its environment."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which organelle contains most of a eukaryotic cell's genetic material and coordinates cellular activities?",
-    options: ["Nucleus", "Nucleolus", "Centriole", "Endoplasmic reticulum"],
+    question: "Which organelle is responsible for protein synthesis?",
+    options: ["Ribosome", "Lysosome", "Vacuole", "Centrosome"],
     answer: 0,
-    explanation: "The nucleus contains most of the cell's DNA and regulates gene expression and many cellular activities."
+    explanation: "Ribosomes translate messenger RNA into polypeptide chains during protein synthesis."
   },
   {
     subject: "BIO 101",
-    question: "What is the jelly-like material enclosed by the cell membrane in which many metabolic reactions occur?",
-    options: ["Nucleoplasm", "Cytoplasm", "Stroma", "Matrix"],
-    answer: 1,
-    explanation: "The cytoplasm includes the cytosol and cellular structures outside the nucleus."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which plant cell organelle contains chlorophyll and is the main site of photosynthesis?",
-    options: ["Mitochondrion", "Leucoplast", "Chloroplast", "Chromoplast"],
+    question: "Which structure controls the movement of substances into and out of the cell?",
+    options: ["Nucleus", "Cell wall", "Plasma membrane", "Nucleolus"],
     answer: 2,
-    explanation: "Chloroplasts contain chlorophyll and convert light energy into chemical energy during photosynthesis."
+    explanation: "The plasma membrane is selectively permeable and regulates the exchange of materials between the cell and its environment."
   },
   {
     subject: "BIO 101",
-    question: "What is a primary function of the large central vacuole in a mature plant cell?",
+    question: "Which organelle contains most of the genetic material in a eukaryotic cell?",
+    options: ["Golgi apparatus", "Nucleus", "Ribosome", "Lysosome"],
+    answer: 1,
+    explanation: "The nucleus contains most of the cell's DNA and plays a major role in controlling cellular activities."
+  },
+  {
+    subject: "BIO 101",
+    question: "Which organelle is the main site of photosynthesis in plant cells?",
+    options: ["Mitochondrion", "Chloroplast", "Vacuole", "Ribosome"],
+    answer: 1,
+    explanation: "Chloroplasts contain chlorophyll, which absorbs light energy used in photosynthesis."
+  },
+  {
+    subject: "BIO 101",
+    question: "Which structure is present in plant cells but generally absent in animal cells?",
+    options: ["Plasma membrane", "Cytoplasm", "Cell wall", "Mitochondrion"],
+    answer: 2,
+    explanation: "Plant cells possess a cellulose cell wall outside their plasma membrane. Animal cells lack a cell wall."
+  },
+  {
+    subject: "BIO 101",
+    question: "What is the main function of the Golgi apparatus?",
     options: [
-      "Generating cellular energy",
-      "Storing water, nutrients, and waste while maintaining turgor pressure",
-      "Synthesizing lipids",
-      "Packaging proteins"
+      "Producing ATP",
+      "Modifying, sorting and packaging proteins",
+      "Storing genetic information",
+      "Digesting food particles"
     ],
     answer: 1,
-    explanation: "The central vacuole stores substances and helps maintain turgor pressure, which supports the plant cell."
+    explanation: "The Golgi apparatus modifies, sorts and packages proteins and lipids into vesicles for transport."
   },
   {
     subject: "BIO 101",
-    question: "Which organelle modifies, sorts, and packages proteins for secretion?",
-    options: [
-      "Rough endoplasmic reticulum",
-      "Golgi apparatus",
-      "Ribosome",
-      "Smooth endoplasmic reticulum"
-    ],
-    answer: 1,
-    explanation: "The Golgi apparatus modifies, sorts, and packages proteins into vesicles for delivery to their destinations."
+    question: "Which organelle contains enzymes responsible for intracellular digestion?",
+    options: ["Lysosome", "Ribosome", "Nucleolus", "Chloroplast"],
+    answer: 0,
+    explanation: "Lysosomes contain digestive enzymes that break down waste materials and worn-out cell components."
   },
   {
     subject: "BIO 101",
-    question: "Which membrane network is studded with ribosomes and assists in protein synthesis and processing?",
+    question: "What is the main difference between prokaryotic and eukaryotic cells?",
     options: [
-      "Smooth endoplasmic reticulum",
-      "Rough endoplasmic reticulum",
-      "Golgi apparatus",
-      "Lysosome"
-    ],
-    answer: 1,
-    explanation: "Ribosomes attached to the rough endoplasmic reticulum synthesise proteins destined for secretion, membranes, or certain organelles."
-  },
-  {
-    subject: "BIO 101",
-    question: "What is the primary distinguishing feature of prokaryotic cells compared with eukaryotic cells?",
-    options: [
-      "Prokaryotic cells are always larger.",
+      "Prokaryotic cells have no DNA.",
+      "Eukaryotic cells lack cytoplasm.",
       "Prokaryotic cells lack a membrane-bound nucleus.",
-      "Eukaryotic cells lack DNA.",
-      "Prokaryotes contain membrane-bound organelles."
-    ],
-    answer: 1,
-    explanation: "Prokaryotes lack a membrane-bound nucleus. Their genetic material is located in a region called the nucleoid."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which structure provides rigid support and protection in plants, fungi, and bacteria?",
-    options: [
-      "Cell membrane",
-      "Cytoskeleton",
-      "Cell wall",
-      "Nuclear envelope"
+      "Eukaryotic cells have no plasma membrane."
     ],
     answer: 2,
-    explanation: "Cell walls provide structural support and protection. Their composition differs among plants, fungi, and bacteria."
+    explanation: "Prokaryotic cells lack a membrane-bound nucleus. Their DNA is located in a region called the nucleoid."
   },
   {
     subject: "BIO 101",
-    question: "Which cellular structure contains digestive enzymes that break down waste and cellular debris?",
-    options: ["Lysosome", "Peroxisome", "Ribosome", "Centrosome"],
-    answer: 0,
-    explanation: "Lysosomes contain hydrolytic enzymes that digest cellular waste and worn-out components."
-  },
-  {
-    subject: "BIO 101",
-    question: "What are the thread-like structures made of DNA and proteins that become visible during cell division called?",
-    options: ["Nucleotides", "Chromosomes", "Ribosomes", "Plasmids"],
+    question: "What is the movement of water through a selectively permeable membrane called?",
+    options: ["Diffusion", "Osmosis", "Active transport", "Exocytosis"],
     answer: 1,
-    explanation: "Chromosomes consist of DNA associated with proteins. They become more condensed and visible during cell division."
-  },
-  {
-    subject: "BIO 101",
-    question: "What is the net movement of water across a selectively permeable membrane from higher water potential to lower water potential called?",
-    options: ["Diffusion", "Active transport", "Osmosis", "Phagocytosis"],
-    answer: 2,
     explanation: "Osmosis is the net movement of water across a selectively permeable membrane down its water-potential gradient."
   },
   {
     subject: "BIO 101",
-    question: "Which transport mechanism uses metabolic energy to move substances against their concentration or electrochemical gradient?",
+    question: "Which process requires energy to move substances against their concentration gradient?",
     options: [
       "Simple diffusion",
       "Osmosis",
-      "Facilitated diffusion",
-      "Active transport"
+      "Active transport",
+      "Facilitated diffusion"
     ],
-    answer: 3,
-    explanation: "Active transport uses energy directly or indirectly to move substances against their gradients."
-  },
-  {
-    subject: "BIO 101",
-    question: "What are the short, hair-like projections used by some cells for movement or to move fluids across their surfaces?",
-    options: ["Flagella", "Cilia", "Pseudopodia", "Microfilaments"],
-    answer: 1,
-    explanation: "Cilia are short cellular projections that can move cells or propel fluid and particles across a cell surface."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which whip-like cellular structure is used by sperm cells for locomotion?",
-    options: ["Cilia", "Pili", "Flagellum", "Microtubule"],
     answer: 2,
-    explanation: "The flagellum of a sperm cell generates movement that enables the cell to swim."
+    explanation: "Active transport uses energy to move substances against their concentration or electrochemical gradients."
   },
   {
     subject: "BIO 101",
-    question: "What is a principal function of the smooth endoplasmic reticulum?",
+    question: "Which part of the cell is commonly described as the site of aerobic cellular respiration?",
+    options: ["Ribosome", "Mitochondrion", "Golgi apparatus", "Nucleus"],
+    answer: 1,
+    explanation: "The mitochondrion is the main site of the citric acid cycle and oxidative phosphorylation in eukaryotic cells."
+  },
+  {
+    subject: "BIO 101",
+    question: "Which structure helps maintain the shape and internal organisation of a cell?",
+    options: ["Cytoskeleton", "Nucleolus", "Chromosome", "Nuclear pore"],
+    answer: 0,
+    explanation: "The cytoskeleton is a network of protein filaments that supports cell shape, organisation and movement."
+  },
+  {
+    subject: "BIO 101",
+    question: "What is the function of the nucleolus?",
     options: [
-      "Synthesising proteins on attached ribosomes",
-      "Synthesising lipids and participating in detoxification",
-      "Storing most of the cell's genetic material",
-      "Performing all cellular respiration"
+      "Production of ribosomal components",
+      "Digestion of cellular waste",
+      "Production of ATP",
+      "Storage of lipids"
+    ],
+    answer: 0,
+    explanation: "The nucleolus produces ribosomal RNA and assembles ribosomal subunits."
+  },
+  {
+    subject: "BIO 101",
+    question: "Which type of transport moves substances from a region of higher concentration to a region of lower concentration without using cellular energy?",
+    options: [
+      "Active transport",
+      "Diffusion",
+      "Endocytosis",
+      "Exocytosis"
     ],
     answer: 1,
-    explanation: "The smooth endoplasmic reticulum participates in lipid synthesis and detoxification. In some cells, it also stores calcium ions."
+    explanation: "Diffusion is the net movement of particles down their concentration gradient and does not directly require metabolic energy."
+  },
+
+
+  // ============================================
+  // MATH 101 — INDICES, LOGARITHMS AND EQUATIONS
+  // QUESTIONS 46–60
+  // ============================================
+
+  {
+    subject: "MATH 101",
+    question: "Simplify 2³ × 2².",
+    options: ["2⁵", "2⁶", "2¹", "2⁹"],
+    answer: 0,
+    explanation: "When multiplying powers with the same base, add the indices: 2³ × 2² = 2⁽³⁺²⁾ = 2⁵."
   },
   {
-    subject: "BIO 101",
-    question: "Which dense, non-membrane-bound structure inside the nucleus produces ribosomal RNA and assembles ribosomal subunits?",
-    options: ["Nucleolus", "Centromere", "Chromatin", "Nuclear pore"],
+    subject: "MATH 101",
+    question: "Simplify 5⁶ ÷ 5².",
+    options: ["5⁸", "5⁴", "5³", "5¹²"],
+    answer: 1,
+    explanation: "When dividing powers with the same base, subtract the indices: 5⁶ ÷ 5² = 5⁽⁶⁻²⁾ = 5⁴."
+  },
+  {
+    subject: "MATH 101",
+    question: "Evaluate 3⁰.",
+    options: ["0", "1", "3", "−1"],
+    answer: 1,
+    explanation: "Any non-zero number raised to the power of zero equals 1."
+  },
+  {
+    subject: "MATH 101",
+    question: "Simplify (2³)².",
+    options: ["2⁵", "2⁶", "2⁹", "2¹"],
+    answer: 1,
+    explanation: "When raising a power to another power, multiply the indices: (2³)² = 2⁶."
+  },
+  {
+    subject: "MATH 101",
+    question: "Evaluate 16^(1/2).",
+    options: ["2", "4", "8", "16"],
+    answer: 1,
+    explanation: "A power of 1/2 represents the square root. Therefore, 16^(1/2) = √16 = 4."
+  },
+  {
+    subject: "MATH 101",
+    question: "Evaluate log₁₀ 1000.",
+    options: ["1", "2", "3", "10"],
+    answer: 2,
+    explanation: "log₁₀ 1000 = 3 because 10³ = 1000."
+  },
+  {
+    subject: "MATH 101",
+    question: "If log₁₀ x = 2, find x.",
+    options: ["10", "20", "100", "1000"],
+    answer: 2,
+    explanation: "Converting to exponential form gives x = 10² = 100."
+  },
+  {
+    subject: "MATH 101",
+    question: "Evaluate log₂ 8.",
+    options: ["2", "3", "4", "8"],
+    answer: 1,
+    explanation: "log₂ 8 = 3 because 2³ = 8."
+  },
+  {
+    subject: "MATH 101",
+    question: "Solve the linear equation 3x + 5 = 20.",
+    options: ["3", "5", "10", "15"],
+    answer: 1,
+    explanation: "Subtract 5 from both sides: 3x = 15. Divide by 3 to obtain x = 5."
+  },
+  {
+    subject: "MATH 101",
+    question: "Solve 2x − 7 = 9.",
+    options: ["1", "4", "8", "16"],
+    answer: 2,
+    explanation: "Add 7 to both sides: 2x = 16. Divide by 2 to obtain x = 8."
+  },
+  {
+    subject: "MATH 101",
+    question: "Find the value of x if 4x + 3 = 2x + 11.",
+    options: ["2", "3", "4", "7"],
+    answer: 2,
+    explanation: "Collect like terms: 4x − 2x = 11 − 3. Therefore, 2x = 8 and x = 4."
+  },
+  {
+    subject: "MATH 101",
+    question: "Which of the following is the standard form of a quadratic equation?",
+    options: [
+      "ax + b = 0",
+      "ax² + bx + c = 0, where a ≠ 0",
+      "ax³ + bx² + c = 0",
+      "ax² + b = 0, where a = 0"
+    ],
+    answer: 1,
+    explanation: "A quadratic equation has the standard form ax² + bx + c = 0, where a is not zero."
+  },
+  {
+    subject: "MATH 101",
+    question: "Solve x² − 5x + 6 = 0.",
+    options: [
+      "x = 1 or x = 6",
+      "x = 2 or x = 3",
+      "x = −2 or x = −3",
+      "x = 3 or x = 5"
+    ],
+    answer: 1,
+    explanation: "Factorise: (x − 2)(x − 3) = 0. Therefore, x = 2 or x = 3."
+  },
+  {
+    subject: "MATH 101",
+    question: "Find the discriminant of x² − 4x + 4 = 0.",
+    options: ["0", "4", "8", "16"],
     answer: 0,
-    explanation: "The nucleolus is the main site of ribosomal RNA production and ribosomal subunit assembly."
+    explanation: "Discriminant = b² − 4ac. Here a = 1, b = −4 and c = 4. Therefore, 16 − 16 = 0."
+  },
+  {
+    subject: "MATH 101",
+    question: "Solve x² − 9 = 0.",
+    options: [
+      "x = 3 only",
+      "x = −3 only",
+      "x = ±3",
+      "x = ±9"
+    ],
+    answer: 2,
+    explanation: "x² = 9. Taking both square roots gives x = 3 or x = −3."
   }
 
 ];
