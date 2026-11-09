@@ -1,531 +1,808 @@
-
 const QUESTION_BANK = [
 
   // ============================================
-  // CHM 101 — ATOMS, MOLECULES AND INTERMOLECULAR FORCES
+  // CHM 101 — QUANTUM THEORY, QUANTUM NUMBERS,
+  // PAULI, AUFBAU AND HUND'S PRINCIPLES
   // QUESTIONS 1–15
   // ============================================
 
   {
     subject: "CHM 101",
-    question: "What is the smallest particle of an element that retains its chemical properties?",
-    options: ["Molecule", "Atom", "Compound", "Ion"],
-    answer: 1,
-    explanation: "An atom is the smallest unit of an element that retains its chemical identity."
-  },
-  {
-    subject: "CHM 101",
-    question: "Which of the following particles has a negative electrical charge?",
-    options: ["Proton", "Neutron", "Electron", "Nucleus"],
-    answer: 2,
-    explanation: "Electrons carry a negative charge, protons are positive, and neutrons are neutral."
-  },
-  {
-    subject: "CHM 101",
-    question: "The atomic number of an element is equal to its number of:",
-    options: ["Neutrons", "Protons", "Protons and neutrons", "Electrons and neutrons"],
-    answer: 1,
-    explanation: "Atomic number is defined as the number of protons in the nucleus of an atom."
-  },
-  {
-    subject: "CHM 101",
-    question: "What is the mass number of an atom containing 11 protons and 12 neutrons?",
-    options: ["11", "12", "23", "24"],
-    answer: 2,
-    explanation: "Mass number = number of protons + number of neutrons = 11 + 12 = 23."
-  },
-  {
-    subject: "CHM 101",
-    question: "Atoms of the same element having different numbers of neutrons are called:",
-    options: ["Isobars", "Isotopes", "Ions", "Isomers"],
-    answer: 1,
-    explanation: "Isotopes have the same atomic number but different mass numbers because they contain different numbers of neutrons."
-  },
-  {
-    subject: "CHM 101",
-    question: "Which of the following is a diatomic molecule?",
-    options: ["H₂O", "CO₂", "O₂", "NH₃"],
-    answer: 2,
-    explanation: "Oxygen gas exists naturally as O₂, a molecule containing two oxygen atoms."
-  },
-  {
-    subject: "CHM 101",
-    question: "What is the chemical formula of calcium chloride?",
-    options: ["CaCl", "CaCl₂", "Ca₂Cl", "Ca₂Cl₂"],
-    answer: 1,
-    explanation: "Calcium forms Ca²⁺ ions while chlorine forms Cl⁻ ions. Two chloride ions are needed to balance one calcium ion."
-  },
-  {
-    subject: "CHM 101",
-    question: "Which type of chemical bond involves the transfer of electrons from one atom to another?",
-    options: ["Covalent bond", "Metallic bond", "Ionic bond", "Hydrogen bond"],
-    answer: 2,
-    explanation: "An ionic bond forms through electron transfer, producing oppositely charged ions that attract each other."
-  },
-  {
-    subject: "CHM 101",
-    question: "A covalent bond is formed when atoms:",
+    question: "Which of the following best describes the principal quantum number (n)?",
     options: [
-      "Transfer protons",
-      "Share electrons",
-      "Lose all their electrons",
-      "Share neutrons"
+      "It determines the orientation of an orbital",
+      "It determines the main energy level or shell occupied by an electron",
+      "It determines the spin of an electron",
+      "It determines the shape of an orbital"
     ],
     answer: 1,
-    explanation: "Covalent bonding occurs when atoms share one or more pairs of electrons."
+    explanation: "The principal quantum number n identifies the main energy level or shell in which an electron is located. Its values are 1, 2, 3, 4, and so on."
   },
+
   {
     subject: "CHM 101",
-    question: "Which of the following molecules is polar?",
-    options: ["CO₂", "CH₄", "H₂O", "O₂"],
-    answer: 2,
-    explanation: "Water has a bent molecular shape, so its bond dipoles do not cancel. This gives it a permanent dipole."
-  },
-  {
-    subject: "CHM 101",
-    question: "Which intermolecular force is primarily responsible for the unusually high boiling point of water?",
+    question: "What are the possible values of the principal quantum number n?",
     options: [
-      "London dispersion forces",
-      "Hydrogen bonding",
-      "Ionic bonding",
-      "Metallic bonding"
+      "0, 1, 2, 3, ...",
+      "1, 2, 3, 4, ...",
+      "−1, 0, +1",
+      "1/2, 1, 3/2, ..."
     ],
     answer: 1,
-    explanation: "Water molecules form strong hydrogen bonds with one another, requiring considerable energy to separate them."
+    explanation: "The principal quantum number can only have positive integer values: n = 1, 2, 3, 4, ..."
   },
+
   {
     subject: "CHM 101",
-    question: "Which intermolecular force is present in all atoms and molecules?",
+    question: "Which quantum number describes the shape of an atomic orbital?",
     options: [
-      "Hydrogen bonding",
-      "Dipole-dipole interaction",
-      "London dispersion forces",
-      "Ionic attraction"
+      "Principal quantum number",
+      "Magnetic quantum number",
+      "Spin quantum number",
+      "Azimuthal quantum number"
+    ],
+    answer: 3,
+    explanation: "The azimuthal or angular momentum quantum number (l) determines the subshell and therefore the shape of the orbital."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "For a principal quantum number n = 3, what are the possible values of the azimuthal quantum number l?",
+    options: [
+      "0, 1",
+      "1, 2, 3",
+      "0, 1, 2",
+      "−3, −2, −1, 0, +1, +2, +3"
     ],
     answer: 2,
-    explanation: "London dispersion forces arise from temporary fluctuations in electron distribution and occur in all atoms and molecules."
+    explanation: "For a given n, l can have values from 0 to n − 1. Therefore, when n = 3, l = 0, 1, or 2."
   },
+
   {
     subject: "CHM 101",
-    question: "Which of the following substances can form hydrogen bonds between its molecules?",
-    options: ["CH₄", "HCl", "NH₃", "CO₂"],
-    answer: 2,
-    explanation: "Ammonia contains N-H bonds and a lone pair on nitrogen, allowing hydrogen bonding between molecules."
-  },
-  {
-    subject: "CHM 101",
-    question: "Which intermolecular force exists between permanent polar molecules?",
+    question: "Which value of the azimuthal quantum number corresponds to an s-subshell?",
     options: [
-      "Dipole-dipole interaction",
-      "Metallic bonding",
-      "Covalent bonding",
-      "Nuclear attraction"
+      "l = 0",
+      "l = 1",
+      "l = 2",
+      "l = 3"
     ],
     answer: 0,
-    explanation: "Permanent dipoles attract one another through electrostatic interactions between their partially positive and partially negative ends."
+    explanation: "The subshells are represented by l = 0 for s, l = 1 for p, l = 2 for d, and l = 3 for f."
   },
+
   {
     subject: "CHM 101",
-    question: "Why does the boiling point of many substances increase as their intermolecular forces become stronger?",
+    question: "Which value of the azimuthal quantum number corresponds to a p-subshell?",
     options: [
-      "Their molecules become smaller.",
-      "More energy is needed to separate their molecules.",
-      "Their atoms lose their protons.",
-      "Their molecular masses always decrease."
+      "l = 0",
+      "l = 1",
+      "l = 2",
+      "l = 3"
     ],
     answer: 1,
-    explanation: "Stronger intermolecular attractions require more energy to overcome during boiling, generally resulting in higher boiling points."
+    explanation: "A p-subshell has l = 1. The s, p, d and f subshells correspond to l values 0, 1, 2 and 3 respectively."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "Which quantum number specifies the orientation of an orbital in space?",
+    options: [
+      "Principal quantum number",
+      "Azimuthal quantum number",
+      "Magnetic quantum number",
+      "Spin quantum number"
+    ],
+    answer: 2,
+    explanation: "The magnetic quantum number (mₗ) specifies the orientation of an orbital within a subshell."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "How many orbitals are present in a p-subshell?",
+    options: [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    answer: 2,
+    explanation: "A p-subshell contains three orbitals, corresponding to mₗ = −1, 0 and +1."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "What is the maximum number of electrons that can occupy a single orbital?",
+    options: [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    answer: 1,
+    explanation: "According to the Pauli exclusion principle, an orbital can contain a maximum of two electrons, and they must have opposite spins."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "Which principle states that no two electrons in an atom can have the same set of four quantum numbers?",
+    options: [
+      "Aufbau principle",
+      "Hund's rule",
+      "Pauli exclusion principle",
+      "Heisenberg principle"
+    ],
+    answer: 2,
+    explanation: "The Pauli exclusion principle states that no two electrons in the same atom can possess identical values for all four quantum numbers."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "According to the Aufbau principle, electrons occupy orbitals in order of:",
+    options: [
+      "Increasing atomic mass",
+      "Increasing energy",
+      "Decreasing nuclear charge",
+      "Increasing number of neutrons"
+    ],
+    answer: 1,
+    explanation: "The Aufbau principle states that electrons fill available orbitals starting from the lowest energy orbital to higher energy orbitals."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "Which of the following represents the correct order of orbital filling?",
+    options: [
+      "1s, 2s, 2p, 3s, 3p",
+      "1s, 2p, 2s, 3p, 3s",
+      "1s, 3s, 2s, 2p, 3p",
+      "2s, 1s, 2p, 3s, 3p"
+    ],
+    answer: 0,
+    explanation: "The orbitals fill in increasing energy order: 1s → 2s → 2p → 3s → 3p, following the Aufbau principle."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "Hund's rule states that electrons occupy degenerate orbitals by:",
+    options: [
+      "Pairing immediately in the first orbital",
+      "Occupying singly with parallel spins before pairing",
+      "Entering the highest-energy orbital first",
+      "Having opposite spins in separate orbitals"
+    ],
+    answer: 1,
+    explanation: "Hund's rule states that electrons occupy orbitals of equal energy singly with parallel spins before pairing occurs."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "What is the maximum number of electrons that can occupy the third shell (n = 3)?",
+    options: [
+      "8",
+      "18",
+      "32",
+      "9"
+    ],
+    answer: 1,
+    explanation: "The maximum number of electrons in a shell is given by 2n². For n = 3: 2(3²) = 18 electrons."
+  },
+
+  {
+    subject: "CHM 101",
+    question: "Which of the following is the correct electronic configuration of nitrogen (Z = 7)?",
+    options: [
+      "1s² 2s² 2p³",
+      "1s² 2s² 2p⁵",
+      "1s² 2s¹ 2p⁴",
+      "1s² 2p⁵"
+    ],
+    answer: 0,
+    explanation: "Nitrogen has seven electrons. Filling according to the Aufbau principle gives 1s² 2s² 2p³."
   },
 
 
   // ============================================
-  // PHY 101 — SCALARS, VECTORS AND MOTION
+  // PHY 101 — VECTOR MULTIPLICATION AND DOT PRODUCT
   // QUESTIONS 16–30
   // ============================================
 
   {
     subject: "PHY 101",
-    question: "Which of the following is a scalar quantity?",
-    options: ["Velocity", "Force", "Displacement", "Speed"],
-    answer: 3,
-    explanation: "Speed has magnitude only, while velocity, force and displacement have both magnitude and direction."
+    question: "Which of the following is the correct expression for the scalar product of two vectors A and B?",
+    options: [
+      "A · B = AB sinθ",
+      "A · B = AB cosθ",
+      "A · B = A + B",
+      "A · B = A/B"
+    ],
+    answer: 1,
+    explanation: "The scalar or dot product is given by A · B = |A||B|cosθ, where θ is the angle between the vectors."
   },
+
   {
     subject: "PHY 101",
-    question: "Which of the following is a vector quantity?",
-    options: ["Mass", "Time", "Acceleration", "Temperature"],
+    question: "The result of the dot product of two vectors is:",
+    options: [
+      "Always a vector",
+      "Always a scalar",
+      "Always zero",
+      "Always negative"
+    ],
+    answer: 1,
+    explanation: "The dot product produces a scalar quantity."
+  },
+
+  {
+    subject: "PHY 101",
+    question: "If A = 3i + 4j and B = 2i + 5j, find A · B.",
+    options: [
+      "14",
+      "20",
+      "26",
+      "29"
+    ],
     answer: 2,
-    explanation: "Acceleration has both magnitude and direction, making it a vector quantity."
+    explanation: "A · B = (3 × 2) + (4 × 5) = 6 + 20 = 26."
   },
+
   {
     subject: "PHY 101",
-    question: "A student walks 3 m east and then 4 m west. What is the magnitude of the total displacement?",
-    options: ["7 m", "4 m", "3 m", "1 m"],
-    answer: 3,
-    explanation: "Taking east as positive, displacement = 3 - 4 = -1 m. Its magnitude is 1 m, directed west."
-  },
-  {
-    subject: "PHY 101",
-    question: "What is the magnitude of a vector A = 3i + 4j?",
-    options: ["3", "4", "5", "7"],
+    question: "What is the dot product of two perpendicular vectors?",
+    options: [
+      "1",
+      "−1",
+      "Zero",
+      "Their product"
+    ],
     answer: 2,
-    explanation: "Magnitude = √(3² + 4²) = √25 = 5."
+    explanation: "For perpendicular vectors, θ = 90°. Therefore A · B = AB cos90° = 0."
   },
+
   {
     subject: "PHY 101",
-    question: "Which of the following represents a unit vector along the positive x-axis?",
-    options: ["i", "j", "k", "2i"],
+    question: "Two vectors have magnitudes 5 and 8 and are inclined at 60°. What is their dot product?",
+    options: [
+      "20",
+      "40",
+      "13",
+      "80"
+    ],
     answer: 0,
-    explanation: "The unit vector i represents a vector of magnitude one along the positive x-axis."
+    explanation: "A · B = AB cosθ = (5)(8)(cos60°) = 40 × 1/2 = 20."
   },
+
   {
     subject: "PHY 101",
-    question: "If a vector A = 6i + 8j, what is its unit vector?",
+    question: "If A · B = AB, what is the angle between A and B?",
     options: [
-      "6i + 8j",
-      "0.6i + 0.8j",
-      "0.8i + 0.6j",
-      "3i + 4j"
+      "0°",
+      "45°",
+      "90°",
+      "180°"
     ],
-    answer: 1,
-    explanation: "The magnitude is √(36 + 64) = 10. Dividing each component by 10 gives 0.6i + 0.8j."
+    answer: 0,
+    explanation: "A · B = AB cosθ. If A · B = AB, then cosθ = 1, so θ = 0°."
   },
+
   {
     subject: "PHY 101",
-    question: "Two vectors acting in the same direction have magnitudes 5 N and 7 N. What is their resultant magnitude?",
-    options: ["2 N", "12 N", "35 N", "7 N"],
-    answer: 1,
-    explanation: "For vectors acting in the same direction, their magnitudes are added: 5 + 7 = 12 N."
-  },
-  {
-    subject: "PHY 101",
-    question: "What is the scalar product of two perpendicular vectors?",
-    options: ["1", "Their magnitudes multiplied", "Zero", "Negative one"],
-    answer: 2,
-    explanation: "A · B = |A||B|cosθ. For perpendicular vectors, θ = 90° and cos90° = 0."
-  },
-  {
-    subject: "PHY 101",
-    question: "If A = 3i + 2j and B = 2i + 4j, find A · B.",
-    options: ["10", "12", "14", "16"],
-    answer: 2,
-    explanation: "A · B = (3 × 2) + (2 × 4) = 6 + 8 = 14."
-  },
-  {
-    subject: "PHY 101",
-    question: "The vector product of two vectors produces which type of quantity?",
+    question: "If A · B = −AB, the angle between A and B is:",
     options: [
-      "A scalar quantity",
-      "A vector quantity",
-      "A dimensionless quantity",
-      "A constant quantity"
+      "0°",
+      "60°",
+      "90°",
+      "180°"
     ],
-    answer: 1,
-    explanation: "The cross product produces a vector perpendicular to the plane containing the two original vectors."
-  },
-  {
-    subject: "PHY 101",
-    question: "What is the magnitude of the cross product of two vectors A and B?",
-    options: [
-      "|A||B|cosθ",
-      "|A| + |B|",
-      "|A||B|sinθ",
-      "|A|/|B|"
-    ],
-    answer: 2,
-    explanation: "The magnitude of the cross product is |A × B| = |A||B|sinθ."
-  },
-  {
-    subject: "PHY 101",
-    question: "A body moves with a displacement of 20 m in 4 seconds. What is its average velocity if the motion is in a straight line?",
-    options: ["4 m/s", "5 m/s", "16 m/s", "80 m/s"],
-    answer: 1,
-    explanation: "Average velocity = displacement/time = 20/4 = 5 m/s."
-  },
-  {
-    subject: "PHY 101",
-    question: "The derivative of displacement with respect to time gives:",
-    options: ["Acceleration", "Force", "Velocity", "Momentum"],
-    answer: 2,
-    explanation: "Velocity is the rate of change of displacement with respect to time: v = ds/dt."
-  },
-  {
-    subject: "PHY 101",
-    question: "If the displacement of a particle is given by s = 3t² + 2t, what is its velocity at t = 2 seconds?",
-    options: ["8 m/s", "10 m/s", "12 m/s", "14 m/s"],
     answer: 3,
-    explanation: "Velocity v = ds/dt = 6t + 2. At t = 2, v = 12 + 2 = 14 m/s."
+    explanation: "Since cosθ = −1, the angle between the vectors is 180°."
   },
+
   {
     subject: "PHY 101",
-    question: "If the velocity of a body is v = 4t + 3, what is its acceleration?",
-    options: ["3 m/s²", "4 m/s²", "4t m/s²", "7 m/s²"],
+    question: "Which of the following is the correct expression for the vector product of A and B?",
+    options: [
+      "A × B = AB cosθ",
+      "A × B = AB sinθ",
+      "A × B = A + B",
+      "A × B = A · B"
+    ],
     answer: 1,
-    explanation: "Acceleration a = dv/dt. Differentiating 4t + 3 gives a constant acceleration of 4 m/s²."
+    explanation: "The magnitude of the vector or cross product is |A × B| = |A||B|sinθ."
+  },
+
+  {
+    subject: "PHY 101",
+    question: "The result of the cross product of two vectors is:",
+    options: [
+      "A scalar",
+      "A vector",
+      "A dimensionless number",
+      "Always zero"
+    ],
+    answer: 1,
+    explanation: "The cross product produces a vector that is perpendicular to both original vectors."
+  },
+
+  {
+    subject: "PHY 101",
+    question: "What is the magnitude of A × B when A and B are parallel?",
+    options: [
+      "AB",
+      "A + B",
+      "Zero",
+      "A/B"
+    ],
+    answer: 2,
+    explanation: "For parallel vectors, θ = 0° and sin0° = 0. Therefore |A × B| = AB sin0° = 0."
+  },
+
+  {
+    subject: "PHY 101",
+    question: "Two vectors have magnitudes 4 and 6 and are perpendicular. What is the magnitude of their cross product?",
+    options: [
+      "10",
+      "24",
+      "12",
+      "0"
+    ],
+    answer: 1,
+    explanation: "|A × B| = AB sin90° = (4)(6)(1) = 24."
+  },
+
+  {
+    subject: "PHY 101",
+    question: "If A = 2i and B = 3j, what is A · B?",
+    options: [
+      "6",
+      "−6",
+      "0",
+      "5"
+    ],
+    answer: 2,
+    explanation: "The i and j unit vectors are perpendicular. Therefore i · j = 0, so A · B = 0."
+  },
+
+  {
+    subject: "PHY 101",
+    question: "If A = 2i and B = 3j, what is A × B?",
+    options: [
+      "6i",
+      "6j",
+      "6k",
+      "0"
+    ],
+    answer: 2,
+    explanation: "A × B = (2i) × (3j) = 6(i × j). Since i × j = k, the answer is 6k."
+  },
+
+  {
+    subject: "PHY 101",
+    question: "Which of the following is equal to i × j?",
+    options: [
+      "i",
+      "j",
+      "k",
+      "−k"
+    ],
+    answer: 2,
+    explanation: "For the Cartesian unit vectors, i × j = k."
+  },
+
+  {
+    subject: "PHY 101",
+    question: "Which of the following is equal to j × i?",
+    options: [
+      "k",
+      "−k",
+      "i",
+      "j"
+    ],
+    answer: 1,
+    explanation: "The cross product is anti-commutative. Therefore j × i = −(i × j) = −k."
   },
 
 
   // ============================================
-  // BIO 101 — CELL BIOLOGY
+  // BIO 101 — TYPES OF TISSUES
+  // EPITHELIAL, CONNECTIVE, MUSCLE AND NERVOUS
   // QUESTIONS 31–45
   // ============================================
 
   {
     subject: "BIO 101",
-    question: "Which organelle is commonly described as the powerhouse of the cell?",
-    options: ["Ribosome", "Mitochondrion", "Golgi apparatus", "Lysosome"],
-    answer: 1,
-    explanation: "Mitochondria produce most of the ATP used to power many cellular activities."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which organelle is responsible for protein synthesis?",
-    options: ["Ribosome", "Lysosome", "Vacuole", "Centrosome"],
-    answer: 0,
-    explanation: "Ribosomes translate messenger RNA into polypeptide chains during protein synthesis."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which structure controls the movement of substances into and out of the cell?",
-    options: ["Nucleus", "Cell wall", "Plasma membrane", "Nucleolus"],
-    answer: 2,
-    explanation: "The plasma membrane is selectively permeable and regulates the exchange of materials between the cell and its environment."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which organelle contains most of the genetic material in a eukaryotic cell?",
-    options: ["Golgi apparatus", "Nucleus", "Ribosome", "Lysosome"],
-    answer: 1,
-    explanation: "The nucleus contains most of the cell's DNA and plays a major role in controlling cellular activities."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which organelle is the main site of photosynthesis in plant cells?",
-    options: ["Mitochondrion", "Chloroplast", "Vacuole", "Ribosome"],
-    answer: 1,
-    explanation: "Chloroplasts contain chlorophyll, which absorbs light energy used in photosynthesis."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which structure is present in plant cells but generally absent in animal cells?",
-    options: ["Plasma membrane", "Cytoplasm", "Cell wall", "Mitochondrion"],
-    answer: 2,
-    explanation: "Plant cells possess a cellulose cell wall outside their plasma membrane. Animal cells lack a cell wall."
-  },
-  {
-    subject: "BIO 101",
-    question: "What is the main function of the Golgi apparatus?",
+    question: "A tissue is best defined as:",
     options: [
-      "Producing ATP",
-      "Modifying, sorting and packaging proteins",
-      "Storing genetic information",
-      "Digesting food particles"
+      "A single specialized cell",
+      "A group of similar cells performing a common function",
+      "A group of organs performing different functions",
+      "The fluid portion of the blood"
     ],
     answer: 1,
-    explanation: "The Golgi apparatus modifies, sorts and packages proteins and lipids into vesicles for transport."
+    explanation: "A tissue is a group of structurally and functionally similar cells organized to perform a particular function."
   },
+
   {
     subject: "BIO 101",
-    question: "Which organelle contains enzymes responsible for intracellular digestion?",
-    options: ["Lysosome", "Ribosome", "Nucleolus", "Chloroplast"],
-    answer: 0,
-    explanation: "Lysosomes contain digestive enzymes that break down waste materials and worn-out cell components."
-  },
-  {
-    subject: "BIO 101",
-    question: "What is the main difference between prokaryotic and eukaryotic cells?",
+    question: "Which of the following is NOT one of the four basic types of animal tissue?",
     options: [
-      "Prokaryotic cells have no DNA.",
-      "Eukaryotic cells lack cytoplasm.",
-      "Prokaryotic cells lack a membrane-bound nucleus.",
-      "Eukaryotic cells have no plasma membrane."
+      "Epithelial tissue",
+      "Connective tissue",
+      "Muscle tissue",
+      "Meristematic tissue"
     ],
-    answer: 2,
-    explanation: "Prokaryotic cells lack a membrane-bound nucleus. Their DNA is located in a region called the nucleoid."
+    answer: 3,
+    explanation: "The four basic animal tissues are epithelial, connective, muscle and nervous tissues. Meristematic tissue is a plant tissue."
   },
+
   {
     subject: "BIO 101",
-    question: "What is the movement of water through a selectively permeable membrane called?",
-    options: ["Diffusion", "Osmosis", "Active transport", "Exocytosis"],
-    answer: 1,
-    explanation: "Osmosis is the net movement of water across a selectively permeable membrane down its water-potential gradient."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which process requires energy to move substances against their concentration gradient?",
+    question: "Which tissue primarily covers body surfaces and lines internal cavities?",
     options: [
-      "Simple diffusion",
-      "Osmosis",
-      "Active transport",
-      "Facilitated diffusion"
+      "Connective tissue",
+      "Epithelial tissue",
+      "Muscle tissue",
+      "Nervous tissue"
     ],
-    answer: 2,
-    explanation: "Active transport uses energy to move substances against their concentration or electrochemical gradients."
-  },
-  {
-    subject: "BIO 101",
-    question: "Which part of the cell is commonly described as the site of aerobic cellular respiration?",
-    options: ["Ribosome", "Mitochondrion", "Golgi apparatus", "Nucleus"],
     answer: 1,
-    explanation: "The mitochondrion is the main site of the citric acid cycle and oxidative phosphorylation in eukaryotic cells."
+    explanation: "Epithelial tissue forms coverings and linings of body surfaces and organs."
   },
+
   {
     subject: "BIO 101",
-    question: "Which structure helps maintain the shape and internal organisation of a cell?",
-    options: ["Cytoskeleton", "Nucleolus", "Chromosome", "Nuclear pore"],
-    answer: 0,
-    explanation: "The cytoskeleton is a network of protein filaments that supports cell shape, organisation and movement."
-  },
-  {
-    subject: "BIO 101",
-    question: "What is the function of the nucleolus?",
+    question: "Which type of epithelial tissue is best suited for rapid diffusion?",
     options: [
-      "Production of ribosomal components",
-      "Digestion of cellular waste",
-      "Production of ATP",
-      "Storage of lipids"
+      "Simple squamous epithelium",
+      "Stratified cuboidal epithelium",
+      "Stratified columnar epithelium",
+      "Transitional epithelium"
     ],
     answer: 0,
-    explanation: "The nucleolus produces ribosomal RNA and assembles ribosomal subunits."
+    explanation: "Simple squamous epithelium consists of a single layer of thin cells and is well suited for rapid diffusion."
   },
+
   {
     subject: "BIO 101",
-    question: "Which type of transport moves substances from a region of higher concentration to a region of lower concentration without using cellular energy?",
+    question: "Which epithelial tissue is commonly associated with absorption and secretion?",
     options: [
-      "Active transport",
-      "Diffusion",
-      "Endocytosis",
-      "Exocytosis"
+      "Simple cuboidal epithelium",
+      "Simple squamous epithelium",
+      "Stratified squamous epithelium",
+      "Transitional epithelium"
+    ],
+    answer: 0,
+    explanation: "Simple cuboidal epithelium commonly performs absorption and secretion and is found in structures such as kidney tubules."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which epithelial tissue is commonly found lining the trachea?",
+    options: [
+      "Simple squamous epithelium",
+      "Ciliated pseudostratified columnar epithelium",
+      "Simple cuboidal epithelium",
+      "Transitional epithelium"
     ],
     answer: 1,
-    explanation: "Diffusion is the net movement of particles down their concentration gradient and does not directly require metabolic energy."
+    explanation: "The respiratory tract, including much of the trachea, is lined by ciliated pseudostratified columnar epithelium."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which of the following is a major function of connective tissue?",
+    options: [
+      "Conduction of nerve impulses only",
+      "Support, binding and protection",
+      "Production of voluntary movement only",
+      "Secretion of digestive enzymes only"
+    ],
+    answer: 1,
+    explanation: "Connective tissues support, bind, protect, store and transport materials throughout the body."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which of the following is an example of connective tissue?",
+    options: [
+      "Blood",
+      "Epidermis",
+      "Skeletal muscle",
+      "Nervous tissue"
+    ],
+    answer: 0,
+    explanation: "Blood is classified as a connective tissue because its cells are suspended in an extracellular matrix called plasma."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which connective tissue is specialized for storing energy?",
+    options: [
+      "Cartilage",
+      "Adipose tissue",
+      "Bone",
+      "Blood"
+    ],
+    answer: 1,
+    explanation: "Adipose tissue stores energy mainly in the form of triglycerides and also provides insulation and cushioning."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which type of muscle tissue is under voluntary control?",
+    options: [
+      "Cardiac muscle",
+      "Smooth muscle",
+      "Skeletal muscle",
+      "Visceral muscle"
+    ],
+    answer: 2,
+    explanation: "Skeletal muscle is generally under voluntary control and is attached to bones to produce body movement."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which type of muscle tissue is found exclusively in the heart?",
+    options: [
+      "Skeletal muscle",
+      "Smooth muscle",
+      "Cardiac muscle",
+      "Connective muscle"
+    ],
+    answer: 2,
+    explanation: "Cardiac muscle forms the muscular wall of the heart and is specialized for rhythmic, involuntary contraction."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which type of muscle tissue is found mainly in the walls of hollow internal organs?",
+    options: [
+      "Skeletal muscle",
+      "Smooth muscle",
+      "Cardiac muscle",
+      "Striated voluntary muscle"
+    ],
+    answer: 1,
+    explanation: "Smooth muscle is found in the walls of many hollow organs, including the intestines and blood vessels."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "The basic functional cell of nervous tissue is the:",
+    options: [
+      "Nephron",
+      "Neuron",
+      "Osteocyte",
+      "Myocyte"
+    ],
+    answer: 1,
+    explanation: "Neurons are specialized cells responsible for receiving, processing and transmitting electrical and chemical signals."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which cells support, nourish and protect neurons?",
+    options: [
+      "Red blood cells",
+      "Glial cells",
+      "Platelets",
+      "Adipocytes"
+    ],
+    answer: 1,
+    explanation: "Glial cells, or neuroglia, support neurons by providing functions such as nourishment, protection, insulation and maintenance of the neural environment."
+  },
+
+  {
+    subject: "BIO 101",
+    question: "Which of the following tissues is primarily responsible for transmitting electrical impulses throughout the body?",
+    options: [
+      "Epithelial tissue",
+      "Connective tissue",
+      "Muscle tissue",
+      "Nervous tissue"
+    ],
+    answer: 3,
+    explanation: "Nervous tissue is specialized for receiving, processing and transmitting electrical signals throughout the body."
   },
 
 
   // ============================================
-  // MATH 101 — INDICES, LOGARITHMS AND EQUATIONS
+  // MATH 101 — INDICES, EXPONENTS AND EQUATIONS
   // QUESTIONS 46–60
   // ============================================
 
   {
     subject: "MATH 101",
-    question: "Simplify 2³ × 2².",
-    options: ["2⁵", "2⁶", "2¹", "2⁹"],
+    question: "Simplify 2³ × 2⁴.",
+    options: [
+      "2⁷",
+      "2¹²",
+      "2¹",
+      "4⁷"
+    ],
     answer: 0,
-    explanation: "When multiplying powers with the same base, add the indices: 2³ × 2² = 2⁽³⁺²⁾ = 2⁵."
+    explanation: "When multiplying powers with the same base, add the indices: 2³ × 2⁴ = 2⁽³⁺⁴⁾ = 2⁷."
   },
+
   {
     subject: "MATH 101",
-    question: "Simplify 5⁶ ÷ 5².",
-    options: ["5⁸", "5⁴", "5³", "5¹²"],
+    question: "Simplify 5⁷ ÷ 5³.",
+    options: [
+      "5¹⁰",
+      "5⁴",
+      "5²¹",
+      "5³"
+    ],
     answer: 1,
-    explanation: "When dividing powers with the same base, subtract the indices: 5⁶ ÷ 5² = 5⁽⁶⁻²⁾ = 5⁴."
+    explanation: "When dividing powers with the same base, subtract the indices: 5⁷ ÷ 5³ = 5⁽⁷⁻³⁾ = 5⁴."
   },
+
   {
     subject: "MATH 101",
-    question: "Evaluate 3⁰.",
-    options: ["0", "1", "3", "−1"],
+    question: "Simplify (3²)⁴.",
+    options: [
+      "3⁶",
+      "3⁸",
+      "3¹⁶",
+      "3²"
+    ],
     answer: 1,
-    explanation: "Any non-zero number raised to the power of zero equals 1."
+    explanation: "When a power is raised to another power, multiply the indices: (3²)⁴ = 3⁽²×⁴⁾ = 3⁸."
   },
+
   {
     subject: "MATH 101",
-    question: "Simplify (2³)².",
-    options: ["2⁵", "2⁶", "2⁹", "2¹"],
+    question: "Simplify x⁵ × x².",
+    options: [
+      "x³",
+      "x⁷",
+      "x¹⁰",
+      "2x⁷"
+    ],
     answer: 1,
-    explanation: "When raising a power to another power, multiply the indices: (2³)² = 2⁶."
+    explanation: "For multiplication of powers with the same base, add the indices: x⁵ × x² = x⁷."
   },
+
+  {
+    subject: "MATH 101",
+    question: "Simplify a⁸ ÷ a³.",
+    options: [
+      "a¹¹",
+      "a⁵",
+      "a²⁴",
+      "a³"
+    ],
+    answer: 1,
+    explanation: "For division of powers with the same base, subtract the indices: a⁸ ÷ a³ = a⁵."
+  },
+
   {
     subject: "MATH 101",
     question: "Evaluate 16^(1/2).",
-    options: ["2", "4", "8", "16"],
+    options: [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
     answer: 1,
-    explanation: "A power of 1/2 represents the square root. Therefore, 16^(1/2) = √16 = 4."
+    explanation: "An exponent of 1/2 represents the square root. Therefore, 16^(1/2) = √16 = 4."
   },
+
   {
     subject: "MATH 101",
-    question: "Evaluate log₁₀ 1000.",
-    options: ["1", "2", "3", "10"],
-    answer: 2,
-    explanation: "log₁₀ 1000 = 3 because 10³ = 1000."
+    question: "Evaluate 27^(1/3).",
+    options: [
+      "3",
+      "6",
+      "9",
+      "27"
+    ],
+    answer: 0,
+    explanation: "An exponent of 1/3 represents the cube root. Therefore, 27^(1/3) = ∛27 = 3."
   },
+
   {
     subject: "MATH 101",
-    question: "If log₁₀ x = 2, find x.",
-    options: ["10", "20", "100", "1000"],
-    answer: 2,
-    explanation: "Converting to exponential form gives x = 10² = 100."
-  },
-  {
-    subject: "MATH 101",
-    question: "Evaluate log₂ 8.",
-    options: ["2", "3", "4", "8"],
+    question: "Simplify x⁰, where x ≠ 0.",
+    options: [
+      "0",
+      "1",
+      "x",
+      "−1"
+    ],
     answer: 1,
-    explanation: "log₂ 8 = 3 because 2³ = 8."
+    explanation: "Any non-zero quantity raised to the power of zero is equal to 1."
   },
+
   {
     subject: "MATH 101",
-    question: "Solve the linear equation 3x + 5 = 20.",
-    options: ["3", "5", "10", "15"],
+    question: "Simplify x⁻².",
+    options: [
+      "−x²",
+      "1/x²",
+      "x²",
+      "2/x"
+    ],
     answer: 1,
-    explanation: "Subtract 5 from both sides: 3x = 15. Divide by 3 to obtain x = 5."
+    explanation: "A negative index means the reciprocal: x⁻² = 1/x²."
   },
+
   {
     subject: "MATH 101",
-    question: "Solve 2x − 7 = 9.",
-    options: ["1", "4", "8", "16"],
+    question: "Solve 2ˣ = 16.",
+    options: [
+      "x = 2",
+      "x = 3",
+      "x = 4",
+      "x = 8"
+    ],
     answer: 2,
-    explanation: "Add 7 to both sides: 2x = 16. Divide by 2 to obtain x = 8."
+    explanation: "Since 16 = 2⁴, comparing powers gives x = 4."
   },
+
   {
     subject: "MATH 101",
-    question: "Find the value of x if 4x + 3 = 2x + 11.",
-    options: ["2", "3", "4", "7"],
-    answer: 2,
-    explanation: "Collect like terms: 4x − 2x = 11 − 3. Therefore, 2x = 8 and x = 4."
+    question: "Solve 3ˣ = 27.",
+    options: [
+      "x = 2",
+      "x = 3",
+      "x = 6",
+      "x = 9"
+    ],
+    answer: 1,
+    explanation: "Since 27 = 3³, it follows that x = 3."
   },
+
+  {
+    subject: "MATH 101",
+    question: "Solve 2x + 5 = 15.",
+    options: [
+      "x = 3",
+      "x = 4",
+      "x = 5",
+      "x = 10"
+    ],
+    answer: 2,
+    explanation: "Subtract 5 from both sides: 2x = 10. Dividing by 2 gives x = 5."
+  },
+
+  {
+    subject: "MATH 101",
+    question: "Solve 3x − 7 = 11.",
+    options: [
+      "x = 4",
+      "x = 5",
+      "x = 6",
+      "x = 7"
+    ],
+    answer: 2,
+    explanation: "Add 7 to both sides: 3x = 18. Divide by 3 to obtain x = 6."
+  },
+
+  {
+    subject: "MATH 101",
+    question: "Solve x² − 5x + 6 = 0.",
+    options: [
+      "x = 1 or 6",
+      "x = 2 or 3",
+      "x = −2 or −3",
+      "x = 3 or 6"
+    ],
+    answer: 1,
+    explanation: "Factorising gives (x − 2)(x − 3) = 0. Therefore, x = 2 or x = 3."
+  },
+
   {
     subject: "MATH 101",
     question: "Which of the following is the standard form of a quadratic equation?",
     options: [
       "ax + b = 0",
-      "ax² + bx + c = 0, where a ≠ 0",
+      "ax² + bx + c = 0, a ≠ 0",
       "ax³ + bx² + c = 0",
-      "ax² + b = 0, where a = 0"
+      "ax + bx + c = 0"
     ],
     answer: 1,
-    explanation: "A quadratic equation has the standard form ax² + bx + c = 0, where a is not zero."
-  },
-  {
-    subject: "MATH 101",
-    question: "Solve x² − 5x + 6 = 0.",
-    options: [
-      "x = 1 or x = 6",
-      "x = 2 or x = 3",
-      "x = −2 or x = −3",
-      "x = 3 or x = 5"
-    ],
-    answer: 1,
-    explanation: "Factorise: (x − 2)(x − 3) = 0. Therefore, x = 2 or x = 3."
-  },
-  {
-    subject: "MATH 101",
-    question: "Find the discriminant of x² − 4x + 4 = 0.",
-    options: ["0", "4", "8", "16"],
-    answer: 0,
-    explanation: "Discriminant = b² − 4ac. Here a = 1, b = −4 and c = 4. Therefore, 16 − 16 = 0."
-  },
-  {
-    subject: "MATH 101",
-    question: "Solve x² − 9 = 0.",
-    options: [
-      "x = 3 only",
-      "x = −3 only",
-      "x = ±3",
-      "x = ±9"
-    ],
-    answer: 2,
-    explanation: "x² = 9. Taking both square roots gives x = 3 or x = −3."
+    explanation: "The standard form of a quadratic equation is ax² + bx + c = 0, where a ≠ 0."
   }
 
 ];
